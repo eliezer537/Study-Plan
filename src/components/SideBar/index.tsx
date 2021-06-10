@@ -1,13 +1,26 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
-import { HomeRounded } from '@material-ui/icons';
+import {
+	HomeRounded,
+	SchoolRounded,
+	NotificationsRounded,
+} from '@material-ui/icons';
 
 export function SideBar() {
 	return (
-		<header>
+		<header className={styles.headerContainer}>
 			<nav>
 				<a href='#'>
-					<HomeRounded color="inherit" />
+					<HomeRounded style={{ color: '#fff', fontSize: 30 }} />
+				</a>
+
+				<a href='#'>
+					<SchoolRounded style={{ color: '#fff', fontSize: 30 }} />
+				</a>
+
+				<a href='#'>
+					<NotificationsRounded style={{ color: '#fff', fontSize: 30 }} />
 				</a>
 			</nav>
 		</header>
